@@ -1,7 +1,7 @@
 """Module de Produto Abstrato do Design Pattern: Factory Method"""
 from abc import *
 
-class IGuitarra(ABCMeta):
+class IGuitarra(ABC):
     """Classe Abstrata de produto Guitarra"""
     def __init__(self): ...
 

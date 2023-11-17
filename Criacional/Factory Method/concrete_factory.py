@@ -1,4 +1,5 @@
 """Module da classe Concreta do Factory Method"""
+from typing import Any
 from abstract_factory import *
 from abstract_product import *
 from concretes_product import *

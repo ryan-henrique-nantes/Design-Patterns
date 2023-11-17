@@ -5,12 +5,12 @@ from abstract_product import IGuitarra
 
 class Tipo(Enum):
     """Opções da Factory"""
-    GIBSON_LES_PAUL: 0
-    GIBSON_SG: 1
-    FENDER_STRATOCASTER: 2
-    FENDER_TELECASTER: 3
+    GIBSON_LES_PAUL = 0
+    GIBSON_SG = 1
+    FENDER_STRATOCASTER = 2
+    FENDER_TELECASTER = 3
 
-class IFactory(ABCMeta):
+class IFactory(ABC):
     """Classe Abstrata do Factory"""
 
     def __init__(self): ...
