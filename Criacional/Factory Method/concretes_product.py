@@ -1,8 +1,14 @@
 """Module das Classes Concreta do Factory Method"""
 from abstract_product import *
 
-class GibsonLesPaul(IGuitarra):
-    """Implementação do IGuitarra"""
+class Guitarra(IGuitarra):
+    @classmethod    
+    def new(cls) -> IGuitarra:
+        """Implementação do Método de Fabricação"""
+        return cls()
+
+class GibsonLesPaul(Guitarra):
+    """Implementação do IGuitarra"""  
 
     def marca(self) -> str:
         """Implementação da Marca"""
@@ -12,11 +18,11 @@ class GibsonLesPaul(IGuitarra):
         """Implementação do Ano de Fabricação"""
         return 2012
     
-    def modelo(self) -> list[str]:
+    def modelo(self) -> list:
         """Implementação dos modelos"""
         return ["dourado", "preto", "vermelho"]
 
-class GibsonSG(IGuitarra):
+class GibsonSG(Guitarra):
     """Implementação do IGuitarra"""
 
     def marca(self) -> str:
@@ -27,11 +33,11 @@ class GibsonSG(IGuitarra):
         """Implementação do Ano de Fabricação"""
         return 2016
     
-    def modelo(self) -> list[str]:
+    def modelo(self) -> list:
         """Implementação dos modelos"""
         return ["branco", "preto"]
 
-class FenderStratocaster(IGuitarra):
+class FenderStratocaster(Guitarra):
     """Implementação do IGuitarra"""
 
     def marca(self) -> str:
@@ -42,11 +48,11 @@ class FenderStratocaster(IGuitarra):
         """Implementação do Ano de Fabricação"""
         return 2001
     
-    def modelo(self) -> list[str]:
+    def modelo(self) -> list:
         """Implementação dos modelos"""
         return ["carmesin", "marrom"]
     
-class FenderTelecaster(IGuitarra):
+class FenderTelecaster(Guitarra):
     """Implementação do IGuitarra"""
 
     def marca(self) -> str:
@@ -57,6 +63,6 @@ class FenderTelecaster(IGuitarra):
         """Implementação do Ano de Fabricação"""
         return 2020
     
-    def modelo(self) -> list[str]:
+    def modelo(self) -> list:
         """Implementação dos modelos"""
         return ["azul", "cobre"]

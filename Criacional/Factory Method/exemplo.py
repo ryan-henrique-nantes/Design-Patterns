@@ -12,9 +12,9 @@ class Teste:
                 opcao = int(input("\nInforme a opção desejada! + \n1-Gibson Les Paul \n2-Gibson SG \n"+
                     "3-Fender Statocaster \n4-Fender Telecaster \n")) - 1
                 tipo = Tipo(opcao)
-                self.guitarra = Factory().guitarra(tipo)
-                print("Marca: " + self.guitarra.marca() + " Ano de Fabricação: "
-                    + str(self.guitarra.ano_fabricacao()) + "Modelos: ")
+                self.guitarra = Factory.new().guitarra(tipo)
+                print("Marca: " + self.guitarra.marca() + " - Ano de Fabricação: "
+                    + str(self.guitarra.ano_fabricacao()) + " - Modelos: ")
                 for modelo in self.guitarra.modelo():
                     print(modelo)
             except: 

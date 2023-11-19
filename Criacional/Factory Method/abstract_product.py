@@ -14,5 +14,5 @@ class IGuitarra(ABC):
     """Metodo Ano de Fabricação a ser implementada"""
 
     @abstractmethod
-    def modelo(self) -> list[str]: ...
+    def modelo(self) -> list: ...
     """Metodo Modelo de Guitarra a ser implementada"""

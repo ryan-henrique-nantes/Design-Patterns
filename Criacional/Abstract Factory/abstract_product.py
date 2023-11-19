@@ -3,15 +3,18 @@ from abc import *
 
 class IFuncionario(ABC):
     """Classe Abstrata de Funcionario"""
-    @property @abstractmethod 
+    @property 
+    @abstractmethod 
     def codigo(self) -> int: ...
     """Property de Codigo"""
 
-    @property @abstractmethod
+    @property 
+    @abstractmethod
     def idade(self) -> int: ...
     """Property de Idade"""
 
-    @property @abstractmethod
+    @property 
+    @abstractmethod
     def nome(self) -> str: ...
     """Property de Nome"""
 
@@ -34,15 +37,18 @@ class IFuncionario(ABC):
 class IMarca(ABC):  
     """Classe Abstrata de Marca"""
 
-    @property @abstractmethod
+    @property 
+    @abstractmethod
     def cnpj(self) -> str: ...
     """Property do CNPJ """
 
-    @property @abstractmethod
-    def lista_funcionario(self) -> list[IFuncionario]: ...
+    @property
+    @abstractmethod
+    def lista_funcionario(self) -> list: ...
     """Property da Lista de Funcionarios"""
 
-    @property @abstractmethod
+    @property 
+    @abstractmethod
     def nome(self) -> str: ...
     """Property do Nome da Empresa"""
 
@@ -69,15 +75,18 @@ class IMarca(ABC):
 class IProduto(ABC):
     """Classe abstrata de Produto"""
 
-    @property @abstractmethod
+    @property 
+    @abstractmethod
     def descricao(self) -> str: ...
     """Getter abstrato de descrição"""
 
-    @property @abstractmethod
+    @property
+    @abstractmethod
     def marca(self) -> IMarca: ...
     """Getter abstrato da marca"""
 
-    @property @abstractmethod
+    @property 
+    @abstractmethod
     def preco(self) -> float: ...
     """Getter abstrato do preço"""
 

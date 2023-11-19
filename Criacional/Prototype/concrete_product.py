@@ -8,6 +8,10 @@ class Produto(IProduto):
         self.__marca = None
         self.__preco = None
 
+    @classmethod
+    def new(cls: "Produto") -> IProduto:
+        return cls()
+
     def set_descricao(self, value: str) -> IProduto:
         """Setter da descrição do produto, usando fluent"""
         self.__descricao = value
@@ -37,4 +41,4 @@ class Produto(IProduto):
     
     def clone(self):
         """Metódo de clonar do Prototype"""
-        return Produto().set_descricao(self.__descricao).set_marca(self.__marca).set_preco(self.__preco)
+        return Produto.new().set_descricao(self.__descricao).set_marca(self.__marca).set_preco(self.__preco)
