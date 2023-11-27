@@ -8,7 +8,7 @@ class Pato(IPassaro):
         self.__nome = nome
 
     @classmethod
-    def new(cls, nome:str) -> IPassaro:
+    def new(cls: "Pato", nome:str) -> IPassaro:
         """Cria um novo pato"""
         return cls(nome)
         

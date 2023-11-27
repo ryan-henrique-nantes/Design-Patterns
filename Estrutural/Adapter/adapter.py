@@ -9,7 +9,7 @@ class PatoDeBorrachaAdapter(IPassaro):
         self.__pato_de_borracha = pato_de_borracha
 
     @classmethod
-    def new(cls, pato_de_borracha:IPassaroBrinquedo) -> IPassaro:
+    def new(cls: "PatoDeBorrachaAdapter", pato_de_borracha:IPassaroBrinquedo) -> IPassaro:
         """Cria um novo pato de borracha"""
         return cls(pato_de_borracha)
         
