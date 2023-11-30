@@ -1,5 +1,6 @@
 """Module da classe concreta do Produto, implementando toda a lógica do Prototype"""
 from abstract_product import *
+from copy import copy
 
 class Produto(IProduto):
     """Classe concreta do IProduto"""
@@ -41,4 +42,4 @@ class Produto(IProduto):
     
     def clone(self):
         """Metódo de clonar do Prototype"""
-        return Produto.new().set_descricao(self.__descricao).set_marca(self.__marca).set_preco(self.__preco)
+        return copy(self)

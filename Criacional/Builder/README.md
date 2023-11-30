@@ -15,7 +15,6 @@
 ## Proposito
     - Separar a construção de um objeto complexo da sua representação, de modo que o mesmo processo de construção possa criar diferentes representações.
     
-
 ### Quando usar
     - Tiver um objeto muito complexo para ser criado em uma única função, ou seja, quando o objeto possui muitos atributos.
     - Quando a construção de um objeto precisa ser independente da representação dele.

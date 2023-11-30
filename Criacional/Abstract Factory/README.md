@@ -14,7 +14,6 @@
 ## Proposito
     - Fornecer uma interface para criar famílias de objetos relacionados ou dependentes sem especificar suas classes concretas.
     
-
 ### Quando usar
     - Quando um projeto deve ser independente de como seus produtos são criados, compostos e representados.
     - Um projeto deve ser configurado com uma familia de produtos.

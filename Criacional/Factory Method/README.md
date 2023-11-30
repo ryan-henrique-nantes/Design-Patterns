@@ -14,7 +14,6 @@
 
 ## Proposito
     - Separar a construção de um objeto complexo da sua representação, de modo que o mesmo processo de construção possa criar diferentes representações.
-    
 
 ### Quando usar
     - Não souber de antemão os tipos e dependências exatas dos objetos com os quais o código vai trabalhar.
